@@ -1,0 +1,11 @@
+---
+- name: new user
+  hosts: 192.168.205.200
+
+  tasks:
+
+- name: add new user
+  hosts: 192.168.205.200
+  routeros_command:
+  commands:
+  -/use add name {{ ansible-awx }} password {{ testAWX }} group=read

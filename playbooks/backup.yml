@@ -1,0 +1,11 @@
+---
+
+- name: Save file from router
+  hosts: 192.168.205.200
+  gather_facts: false
+
+  tasks:
+       
+    - name: backup-file create
+      routeros_command:
+        commands: /system backup save name=backup_awx
