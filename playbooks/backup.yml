@@ -1,7 +1,7 @@
 ---
 
 - name: Save file from router
-  hosts: 192.168.205.200
+  hosts: 192.168.88.1
   gather_facts: false
 
   tasks:
